@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA Technologies | AI, Cloud & Cybersecurity</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #071a33;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #55b9ff;
+    }
+
+    .hero {
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+      background:
+        radial-gradient(circle at 80% 30%, #164b79 0%, transparent 30%),
+        linear-gradient(135deg, #071a33, #0b2949);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #73c7ff;
+      border: 1px solid #2c6e9d;
+      border-radius: 20px;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #d6e5f3;
+      max-width: 680px;
+      margin-bottom: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1689d8;
+      color: white;
+      padding: 13px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #8cb5d2;
+    }
+
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: #64748b;
+    }
+
+    .services {
+      background: #f5f8fc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #e3eaf2;
+      box-shadow: 0 8px 24px rgba(10, 30, 60, 0.05);
+    }
+
+    .card .icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #64748b;
+    }
+
+    .about {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #526176;
+      font-size: 18px;
+    }
+
+    .cta {
+      background: #0b2949;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #cbd9e7;
+      margin-bottom: 28px;
+    }
+
+    footer {
+      background: #061526;
+      color: #9eb0c2;
+      text-align: center;
+      padding: 28px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AAA TECHNOLOGIES</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <div class="tag">AI • CLOUD • CYBERSECURITY</div>
+
+      <h1>Secure. Modernize. Innovate.</h1>
+
+      <p>
+        AAA Technologies helps organizations adopt secure cloud infrastructure,
+        strengthen cybersecurity, and use artificial intelligence to build
+        smarter and more resilient businesses.
+      </p>
+
+      <a class="button" href="#services">Explore Our Services</a>
+      <a class="button secondary" href="#contact">Talk to Us</a>
+
+    </div>
+  </section>
+
+
+  <section class="services" id="services">
+
+    <div class="section-title">
+      <h2>Technology Solutions for Modern Organizations</h2>
+      <p>
+        Practical technology services designed around security,
+        reliability, automation and business growth.
+      </p>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">☁️</div>
+        <h3>Cloud Solutions</h3>
+        <p>
+          Cloud architecture, migration, infrastructure modernization
+          and cloud optimization for modern workloads.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Cybersecurity</h3>
+        <p>
+          Security assessments, cloud security, identity protection,
+          security architecture and cybersecurity consulting.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧠</div>
+        <h3>Artificial Intelligence</h3>
+        <p>
+          AI strategy, intelligent automation and practical AI solutions
+          designed to improve productivity and operations.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>IT Modernization</h3>
+        <p>
+          Modernize infrastructure and business technology with scalable,
+          secure and maintainable solutions.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎓</div>
+        <h3>Technical Training</h3>
+        <p>
+          Practical training in cloud, cybersecurity, AI and modern
+          technology for professionals and organizations.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💡</div>
+        <h3>Technology Consulting</h3>
+        <p>
+          Strategic guidance to help organizations evaluate technology,
+          reduce risk and plan successful transformation initiatives.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about">
+
+    <div class="about">
+
+      <h2>About AAA Technologies</h2>
+
+      <p>
+        AAA Technologies is a Canadian technology company focused on helping
+        organizations navigate cloud computing, cybersecurity and artificial
+        intelligence. We combine technical expertise with practical business
+        thinking to create secure, scalable and effective technology solutions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="cta" id="contact">
+
+    <h2>Let's Build What's Next</h2>
+
+    <p>
+      Looking for help with cloud, cybersecurity, AI or technology modernization?
+      Start a conversation with AAA Technologies.
+    </p>
+
+    <a class="button" href="mailto:info@aaa-tech.ca">Contact AAA Technologies</a>
+
+  </section>
+
+</main>
+
+
+<footer>
+  © 2026 AAA Technologies Ltd. All rights reserved.
+</footer>
+
+</body>
+</html>
