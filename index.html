@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Technologies | AI, Cloud & Cybersecurity</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AAA Technologies | Cloud, Cybersecurity & AI Training in Canada</title>
+
+  <meta
+    name="description"
+    content="AAA Technologies is a Canadian technology training and consulting company providing instructor-led Microsoft cloud, cybersecurity, AI and modern IT training online and on-site."
+  />
 
   <style>
+    :root {
+      --navy: #071a33;
+      --navy-2: #0b2949;
+      --blue: #1689d8;
+      --blue-light: #56b8f5;
+      --cyan: #63d7ff;
+      --white: #ffffff;
+      --off-white: #f5f8fc;
+      --text: #172033;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --green: #0f9f6e;
+      --gold: #d89b18;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -18,328 +39,1294 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #172033;
-      background: #ffffff;
+      color: var(--text);
+      background: var(--white);
       line-height: 1.6;
     }
 
-    header {
-      background: #071a33;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    a {
+      text-decoration: none;
     }
 
-    .logo {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+    .container {
+      width: min(1180px, 88%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 26, 51, 0.97);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      color: var(--white);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+    }
+
+    .brand span {
+      color: var(--blue-light);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-size: 15px;
+      color: #dce7f3;
+      font-size: 14px;
+      font-weight: 600;
     }
 
     nav a:hover {
-      color: #55b9ff;
+      color: var(--cyan);
     }
 
+    .nav-cta {
+      padding: 10px 18px;
+      background: var(--blue);
+      border-radius: 6px;
+      color: white !important;
+    }
+
+    /* HERO */
+
     .hero {
-      min-height: 620px;
+      min-height: 680px;
+      color: white;
       display: flex;
       align-items: center;
-      padding: 80px 7%;
       background:
-        radial-gradient(circle at 80% 30%, #164b79 0%, transparent 30%),
-        linear-gradient(135deg, #071a33, #0b2949);
-      color: white;
+        radial-gradient(circle at 82% 30%, rgba(50,149,220,0.35), transparent 25%),
+        radial-gradient(circle at 90% 70%, rgba(41,102,160,0.25), transparent 30%),
+        linear-gradient(135deg, #061629 0%, #0a2847 60%, #0d3558 100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      right: -120px;
+      top: 100px;
+      border-radius: 50%;
+      border: 1px solid rgba(103, 211, 255, 0.18);
+      box-shadow:
+        0 0 0 55px rgba(103, 211, 255, 0.035),
+        0 0 0 110px rgba(103, 211, 255, 0.025);
     }
 
     .hero-content {
-      max-width: 760px;
+      max-width: 850px;
+      position: relative;
+      z-index: 2;
+      padding: 90px 0;
     }
 
-    .tag {
+    .eyebrow {
       display: inline-block;
-      color: #73c7ff;
-      border: 1px solid #2c6e9d;
-      border-radius: 20px;
-      padding: 6px 14px;
-      margin-bottom: 20px;
-      font-size: 14px;
+      border: 1px solid #347aa6;
+      background: rgba(31, 113, 166, 0.15);
+      border-radius: 30px;
+      padding: 7px 15px;
+      margin-bottom: 22px;
+      color: #8bd5ff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
     }
 
-    h1 {
-      font-size: 56px;
-      line-height: 1.08;
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.05;
+      max-width: 850px;
       margin-bottom: 22px;
     }
 
+    .hero h1 span {
+      color: var(--blue-light);
+    }
+
     .hero p {
-      font-size: 20px;
-      color: #d6e5f3;
-      max-width: 680px;
+      max-width: 760px;
+      color: #d5e3ef;
+      font-size: 19px;
       margin-bottom: 32px;
     }
 
-    .button {
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
       display: inline-block;
-      background: #1689d8;
+      padding: 13px 23px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--blue);
       color: white;
-      padding: 13px 24px;
-      border-radius: 6px;
-      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background: #0877bf;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #789bb6;
+      color: white;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.09);
+    }
+
+    /* TRUST BAR */
+
+    .trust-bar {
+      background: white;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      min-height: 95px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+      text-align: center;
+    }
+
+    .trust-item {
+      padding: 12px 16px;
+      border-right: 1px solid var(--border);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-icon {
+      font-size: 23px;
+      margin-bottom: 3px;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: #14213d;
+      font-size: 14px;
+    }
+
+    .trust-item small {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* COMMON SECTION */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 9px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* AUDIENCE */
+
+    .audiences {
+      background: var(--off-white);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .audience-card {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 8px 28px rgba(20,40,70,0.05);
+    }
+
+    .audience-card .icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .audience-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .audience-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* TRAINING */
+
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .training-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      background: white;
+      box-shadow: 0 7px 25px rgba(20, 40, 70, 0.05);
+    }
+
+    .training-card .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #e9f5fd;
+      color: var(--blue);
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .training-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .training-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* DELIVERY */
+
+    .delivery {
+      background: var(--navy);
+      color: white;
+    }
+
+    .delivery .section-heading p {
+      color: #b8c9d9;
+    }
+
+    .delivery-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .delivery-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 34px;
+    }
+
+    .delivery-card .icon {
+      font-size: 35px;
+      margin-bottom: 14px;
+    }
+
+    .delivery-card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .delivery-card p {
+      color: #c7d5e3;
+    }
+
+    /* CREDIBILITY */
+
+    .credibility-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .credibility-box {
+      background: #edf7fd;
+      border: 1px solid #cce9fa;
+      border-radius: 15px;
+      padding: 35px;
+    }
+
+    .credibility-box h3 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .credibility-box p {
+      color: var(--muted);
+    }
+
+    .check-list {
+      margin-top: 24px;
+      list-style: none;
+    }
+
+    .check-list li {
+      margin-bottom: 12px;
+      color: #39495c;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--green);
       font-weight: bold;
       margin-right: 10px;
     }
 
-    .button.secondary {
-      background: transparent;
-      border: 1px solid #8cb5d2;
+    /* ACCESS */
+
+    .access {
+      background: var(--off-white);
     }
 
-    section {
-      padding: 80px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 50px;
-    }
-
-    .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 12px;
-    }
-
-    .section-title p {
-      color: #64748b;
-    }
-
-    .services {
-      background: #f5f8fc;
-    }
-
-    .grid {
+    .access-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      max-width: 1200px;
-      margin: auto;
+      gap: 22px;
     }
 
-    .card {
+    .access-card {
       background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
       padding: 30px;
-      border-radius: 10px;
-      border: 1px solid #e3eaf2;
-      box-shadow: 0 8px 24px rgba(10, 30, 60, 0.05);
     }
 
-    .card .icon {
-      font-size: 32px;
-      margin-bottom: 16px;
+    .access-card h3 {
+      margin-bottom: 10px;
     }
 
-    .card h3 {
-      margin-bottom: 12px;
-      font-size: 21px;
+    .access-card p {
+      color: var(--muted);
+      font-size: 14px;
     }
 
-    .card p {
-      color: #64748b;
+    .badge {
+      display: inline-block;
+      padding: 5px 9px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #0b5d42;
+      background: #dcf7ec;
     }
 
-    .about {
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .about h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
     }
 
-    .about p {
-      color: #526176;
-      font-size: 18px;
+    .service-card h3 {
+      margin-bottom: 10px;
     }
 
-    .cta {
-      background: #0b2949;
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CANADA */
+
+    .canada {
+      background:
+        linear-gradient(rgba(6,22,41,0.94), rgba(6,22,41,0.94)),
+        linear-gradient(135deg, #102d4b, #061629);
       color: white;
       text-align: center;
     }
 
-    .cta h2 {
-      font-size: 36px;
+    .canada h2 {
+      font-size: 40px;
       margin-bottom: 15px;
     }
 
-    .cta p {
-      color: #cbd9e7;
-      margin-bottom: 28px;
+    .canada p {
+      color: #c9d8e6;
+      max-width: 850px;
+      margin: auto;
+      font-size: 17px;
     }
 
-    footer {
-      background: #061526;
-      color: #9eb0c2;
+    /* CTA */
+
+    .cta {
       text-align: center;
-      padding: 28px;
+    }
+
+    .cta-box {
+      border-radius: 16px;
+      padding: 55px 30px;
+      background: linear-gradient(135deg, #0a2a49, #145b8e);
+      color: white;
+    }
+
+    .cta-box h2 {
+      font-size: 38px;
+      margin-bottom: 13px;
+    }
+
+    .cta-box p {
+      color: #d4e4f0;
+      margin: 0 auto 25px;
+      max-width: 700px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #051322;
+      color: #a7b7c7;
+      padding: 48px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-brand {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #a7b7c7;
       font-size: 14px;
     }
 
-    @media (max-width: 800px) {
-      header {
-        flex-direction: column;
-        gap: 12px;
+    footer a {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .copyright {
+      padding-top: 22px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+
+      nav {
+        display: none;
       }
 
-      nav a {
-        margin: 0 8px;
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
-      h1 {
-        font-size: 40px;
+      .trust-item {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .audience-grid,
+      .training-grid,
+      .access-grid,
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .credibility-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (max-width: 650px) {
+
+      section {
+        padding: 65px 0;
       }
 
       .hero {
-        min-height: 520px;
+        min-height: auto;
       }
 
-      .grid {
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      .audience-grid,
+      .training-grid,
+      .access-grid,
+      .services-grid,
+      .delivery-options,
+      .footer-grid,
+      .trust-grid {
         grid-template-columns: 1fr;
       }
+
+      .trust-item {
+        border-right: 0;
+      }
+
+      .cta-box {
+        padding: 42px 20px;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">AAA TECHNOLOGIES</div>
+  <div class="container navbar">
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <div class="brand">
+      AAA <span>TECHNOLOGIES</span>
+    </div>
+
+    <nav>
+      <a href="#training">Training</a>
+      <a href="#audiences">Who We Train</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </nav>
+
+  </div>
 </header>
+
 
 <main>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
+  <!-- HERO -->
 
-      <div class="tag">AI • CLOUD • CYBERSECURITY</div>
+  <section class="hero">
 
-      <h1>Secure. Modernize. Innovate.</h1>
+    <div class="container">
 
-      <p>
-        AAA Technologies helps organizations adopt secure cloud infrastructure,
-        strengthen cybersecurity, and use artificial intelligence to build
-        smarter and more resilient businesses.
-      </p>
+      <div class="hero-content">
 
-      <a class="button" href="#services">Explore Our Services</a>
-      <a class="button secondary" href="#contact">Talk to Us</a>
+        <div class="eyebrow">
+          CANADIAN TECHNOLOGY TRAINING • CLOUD • CYBERSECURITY • AI
+        </div>
+
+        <h1>
+          Build Skills.
+          <span>Build Careers.</span>
+          Build What's Next.
+        </h1>
+
+        <p>
+          AAA Technologies provides practical, instructor-led technology training
+          for professionals, students, organizations, nonprofits and government.
+          Build real-world skills in Microsoft cloud technologies, cybersecurity,
+          artificial intelligence and modern IT through experienced instructors
+          and hands-on learning.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#training" class="btn btn-primary">
+            Explore Training
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Request Training
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
+
   </section>
 
 
-  <section class="services" id="services">
+  <!-- TRUST BAR -->
 
-    <div class="section-title">
-      <h2>Technology Solutions for Modern Organizations</h2>
-      <p>
-        Practical technology services designed around security,
-        reliability, automation and business growth.
-      </p>
-    </div>
+  <div class="trust-bar">
 
-    <div class="grid">
+    <div class="container trust-grid">
 
-      <div class="card">
-        <div class="icon">☁️</div>
-        <h3>Cloud Solutions</h3>
-        <p>
-          Cloud architecture, migration, infrastructure modernization
-          and cloud optimization for modern workloads.
-        </p>
+      <div class="trust-item">
+        <div class="trust-icon">🇨🇦</div>
+        <strong>Canadian Company</strong>
+        <small>Based in Canada</small>
       </div>
 
-      <div class="card">
-        <div class="icon">🛡️</div>
-        <h3>Cybersecurity</h3>
-        <p>
-          Security assessments, cloud security, identity protection,
-          security architecture and cybersecurity consulting.
-        </p>
+      <div class="trust-item">
+        <div class="trust-icon">☁️</div>
+        <strong>Microsoft AI Cloud Partner</strong>
+        <small>Microsoft partner ecosystem</small>
       </div>
 
-      <div class="card">
-        <div class="icon">🧠</div>
-        <h3>Artificial Intelligence</h3>
-        <p>
-          AI strategy, intelligent automation and practical AI solutions
-          designed to improve productivity and operations.
-        </p>
+      <div class="trust-item">
+        <div class="trust-icon">🎓</div>
+        <strong>MCT-Led Training</strong>
+        <small>Experienced certified instructors</small>
       </div>
 
-      <div class="card">
-        <div class="icon">⚙️</div>
-        <h3>IT Modernization</h3>
-        <p>
-          Modernize infrastructure and business technology with scalable,
-          secure and maintainable solutions.
-        </p>
+      <div class="trust-item">
+        <div class="trust-icon">🧪</div>
+        <strong>Hands-On Learning</strong>
+        <small>Practical labs & scenarios</small>
       </div>
 
-      <div class="card">
-        <div class="icon">🎓</div>
-        <h3>Technical Training</h3>
-        <p>
-          Practical training in cloud, cybersecurity, AI and modern
-          technology for professionals and organizations.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">💡</div>
-        <h3>Technology Consulting</h3>
-        <p>
-          Strategic guidance to help organizations evaluate technology,
-          reduce risk and plan successful transformation initiatives.
-        </p>
+      <div class="trust-item">
+        <div class="trust-icon">🌎</div>
+        <strong>Online & On-Site</strong>
+        <small>Flexible delivery options</small>
       </div>
 
     </div>
+
+  </div>
+
+
+  <!-- AUDIENCES -->
+
+  <section class="audiences" id="audiences">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Who We Serve
+        </div>
+
+        <h2>
+          Technology Training for Every Stage of Growth
+        </h2>
+
+        <p>
+          Whether you're building a career, upskilling a team or developing
+          workforce capabilities, AAA Technologies provides training designed
+          around practical outcomes.
+        </p>
+
+      </div>
+
+
+      <div class="audience-grid">
+
+        <div class="audience-card">
+
+          <div class="icon">👨‍🎓</div>
+
+          <h3>Students & Professionals</h3>
+
+          <p>
+            Develop practical skills, prepare for Microsoft certifications and
+            strengthen your career in cloud, cybersecurity, AI and modern IT.
+          </p>
+
+        </div>
+
+
+        <div class="audience-card">
+
+          <div class="icon">🏢</div>
+
+          <h3>Businesses & Organizations</h3>
+
+          <p>
+            Upskill teams through customized instructor-led training designed
+            around organizational technologies, roles and business objectives.
+          </p>
+
+        </div>
+
+
+        <div class="audience-card">
+
+          <div class="icon">🏛️</div>
+
+          <h3>Government & Public Sector</h3>
+
+          <p>
+            Workforce development, cloud skills, cybersecurity education and
+            modern technology training for public-sector teams and programs.
+          </p>
+
+        </div>
+
+
+        <div class="audience-card">
+
+          <div class="icon">🤝</div>
+
+          <h3>Nonprofit & Community Organizations</h3>
+
+          <p>
+            Collaborative technology-training opportunities designed to expand
+            access to digital skills and support workforce and community development.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
+
+  <!-- TRAINING -->
+
+  <section id="training">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Professional Training
+        </div>
+
+        <h2>
+          Practical Technology Skills for the Real World
+        </h2>
+
+        <p>
+          Our programs combine instructor-led learning, hands-on practice and
+          real-world scenarios to help learners build confidence and capability.
+        </p>
+
+      </div>
+
+
+      <div class="training-grid">
+
+        <div class="training-card">
+
+          <div class="icon">☁️</div>
+
+          <h3>Microsoft Azure & Cloud</h3>
+
+          <p>
+            Azure administration, cloud architecture, infrastructure,
+            identity, governance, security and cloud modernization.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <div class="icon">🛡️</div>
+
+          <h3>Cybersecurity & SOC</h3>
+
+          <p>
+            Security operations, Microsoft Sentinel, Defender,
+            threat detection, incident response and practical SOC scenarios.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <div class="icon">🧠</div>
+
+          <h3>Artificial Intelligence</h3>
+
+          <p>
+            AI fundamentals, generative AI, responsible AI,
+            automation, AI productivity and practical business applications.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <div class="icon">🔐</div>
+
+          <h3>Microsoft Security</h3>
+
+          <p>
+            Identity protection, Azure security, Defender,
+            Sentinel and Microsoft security technologies.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <div class="icon">💼</div>
+
+          <h3>Microsoft 365 & Modern Work</h3>
+
+          <p>
+            Microsoft 365, collaboration, productivity,
+            identity, administration and modern workplace technologies.
+          </p>
+
+        </div>
+
+
+        <div class="training-card">
+
+          <div class="icon">🚀</div>
+
+          <h3>Career & Certification Preparation</h3>
+
+          <p>
+            Structured training designed to build real-world knowledge
+            while helping learners prepare for relevant industry certifications.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DELIVERY -->
+
+  <section class="delivery">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Flexible Delivery
+        </div>
+
+        <h2>
+          Learn Online or On-Site
+        </h2>
+
+        <p>
+          Training delivery can be adapted to individual learners,
+          teams and organizational requirements.
+        </p>
+
+      </div>
+
+
+      <div class="delivery-options">
+
+        <div class="delivery-card">
+
+          <div class="icon">💻</div>
+
+          <h3>Live Online Training</h3>
+
+          <p>
+            Instructor-led virtual classrooms provide interactive training,
+            demonstrations, discussions and hands-on exercises from anywhere.
+          </p>
+
+        </div>
+
+
+        <div class="delivery-card">
+
+          <div class="icon">🏫</div>
+
+          <h3>On-Site Training</h3>
+
+          <p>
+            Instructor-led training can be delivered at customer locations
+            for teams, organizations, government and community programs.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CREDIBILITY -->
 
   <section id="about">
 
-    <div class="about">
+    <div class="container">
 
-      <h2>About AAA Technologies</h2>
+      <div class="credibility-grid">
+
+        <div>
+
+          <div class="section-label">
+            Why AAA Technologies
+          </div>
+
+          <h2 style="font-size:40px; line-height:1.15; margin-bottom:18px;">
+            Experience Beyond the Classroom
+          </h2>
+
+          <p style="color:#64748b; font-size:17px;">
+            Effective technical training requires more than slides and theory.
+            AAA Technologies focuses on practical learning delivered by experienced
+            technology professionals who understand how modern systems operate
+            in real organizations.
+          </p>
+
+
+          <ul class="check-list">
+
+            <li>Microsoft-focused cloud, security and AI expertise</li>
+
+            <li>Training delivered by experienced technology professionals</li>
+
+            <li>Microsoft Certified Trainer (MCT) instruction</li>
+
+            <li>Hands-on labs and real-world technical scenarios</li>
+
+            <li>Canadian-based training delivery</li>
+
+            <li>Training for individuals, teams and organizations</li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="credibility-box">
+
+          <h3>
+            Microsoft AI Cloud Partner
+          </h3>
+
+          <p>
+            AAA Technologies participates in the Microsoft AI Cloud Partner
+            Program and focuses on building practical expertise around
+            Microsoft cloud, cybersecurity, artificial intelligence and
+            modern technology solutions.
+          </p>
+
+          <br>
+
+          <p>
+            Microsoft-focused training is delivered by qualified instructors,
+            including Microsoft Certified Trainers (MCTs), bringing both
+            technical knowledge and real-world experience into the learning environment.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ACCESSIBILITY / COMMUNITY -->
+
+  <section class="access">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Expanding Access to Technology Skills
+        </div>
+
+        <h2>
+          Training Should Create Opportunity
+        </h2>
+
+        <p>
+          AAA Technologies is committed to exploring practical ways to make
+          professional technology training more accessible.
+        </p>
+
+      </div>
+
+
+      <div class="access-grid">
+
+        <div class="access-card">
+
+          <span class="badge">
+            STUDENTS
+          </span>
+
+          <h3>
+            Student Training Discounts
+          </h3>
+
+          <p>
+            Special training rates may be available for students and individuals
+            preparing to enter or advance within the technology workforce.
+          </p>
+
+        </div>
+
+
+        <div class="access-card">
+
+          <span class="badge">
+            NONPROFITS
+          </span>
+
+          <h3>
+            Nonprofit Partnerships
+          </h3>
+
+          <p>
+            We work with eligible nonprofit and community organizations to explore
+            discounted, sponsored or no-cost training opportunities subject to
+            partnership and program availability.
+          </p>
+
+        </div>
+
+
+        <div class="access-card">
+
+          <span class="badge">
+            WORKFORCE DEVELOPMENT
+          </span>
+
+          <h3>
+            Employer & Community Programs
+          </h3>
+
+          <p>
+            AAA Technologies welcomes opportunities to collaborate with employers,
+            community organizations and public programs supporting technology
+            workforce development and professional upskilling.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Beyond Training
+        </div>
+
+        <h2>
+          Technology Services & Consulting
+        </h2>
+
+        <p>
+          Training is a core part of AAA Technologies, but our capabilities extend
+          into practical technology consulting and implementation support.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+        <div class="service-card">
+
+          <h3>
+            ☁️ Cloud Consulting
+          </h3>
+
+          <p>
+            Cloud planning, Azure architecture, modernization,
+            migration guidance and cloud optimization.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <h3>
+            🛡️ Cybersecurity Consulting
+          </h3>
+
+          <p>
+            Security assessments, cloud security,
+            identity protection and security architecture guidance.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <h3>
+            🧠 AI Advisory
+          </h3>
+
+          <p>
+            Helping organizations understand, evaluate and responsibly
+            adopt practical artificial intelligence and automation solutions.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <h3>
+            ⚙️ IT Modernization
+          </h3>
+
+          <p>
+            Technology modernization and infrastructure planning
+            designed around security, reliability and maintainability.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <h3>
+            📋 Technical Assessments
+          </h3>
+
+          <p>
+            Technology assessments designed to identify risks,
+            modernization opportunities and practical improvement paths.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <h3>
+            🤝 Advisory Services
+          </h3>
+
+          <p>
+            Strategic technical guidance for businesses,
+            nonprofits, public-sector organizations and technology teams.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CANADA -->
+
+  <section class="canada">
+
+    <div class="container">
+
+      <div class="section-label" style="color:#6bd0ff;">
+        Proudly Canadian
+      </div>
+
+      <h2>
+        Built in Canada. Delivered from Canada.
+      </h2>
 
       <p>
-        AAA Technologies is a Canadian technology company focused on helping
-        organizations navigate cloud computing, cybersecurity and artificial
-        intelligence. We combine technical expertise with practical business
-        thinking to create secure, scalable and effective technology solutions.
+        AAA Technologies Ltd. is a Canadian technology and training company.
+        Our training operations are based in Canada, with instruction delivered
+        by Canada-based technology professionals. We are committed to supporting
+        Canadian learners, organizations, nonprofits and public-sector partners
+        while also serving customers through flexible online delivery.
       </p>
 
     </div>
@@ -347,16 +1334,34 @@
   </section>
 
 
+  <!-- CONTACT -->
+
   <section class="cta" id="contact">
 
-    <h2>Let's Build What's Next</h2>
+    <div class="container">
 
-    <p>
-      Looking for help with cloud, cybersecurity, AI or technology modernization?
-      Start a conversation with AAA Technologies.
-    </p>
+      <div class="cta-box">
 
-    <a class="button" href="mailto:info@aaa-tech.ca">Contact AAA Technologies</a>
+        <h2>
+          Let's Build Skills That Matter
+        </h2>
+
+        <p>
+          Looking for professional technology training, team upskilling,
+          nonprofit collaboration, workforce development or technology consulting?
+          Start a conversation with AAA Technologies.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="mailto:ali@aaa-tech.ca"
+        >
+          Contact AAA Technologies
+        </a>
+
+      </div>
+
+    </div>
 
   </section>
 
@@ -364,8 +1369,72 @@
 
 
 <footer>
-  © 2026 AAA Technologies Ltd. All rights reserved.
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="footer-brand">
+          AAA TECHNOLOGIES LTD.
+        </div>
+
+        <p>
+          Canadian technology training, cloud, cybersecurity,
+          artificial intelligence and consulting services.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Training
+        </h4>
+
+        <a href="#training">Cloud & Azure</a>
+        <a href="#training">Cybersecurity</a>
+        <a href="#training">Artificial Intelligence</a>
+        <a href="#training">Microsoft Technologies</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Contact
+        </h4>
+
+        <a href="mailto:ali@aaa-tech.ca">
+          ali@aaa-tech.ca
+        </a>
+
+        <p>
+          Alberta, Canada
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © <span id="year"></span> AAA Technologies Ltd. All rights reserved.
+
+    </div>
+
+  </div>
+
 </footer>
+
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
