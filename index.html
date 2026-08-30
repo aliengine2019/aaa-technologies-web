@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +9,61 @@
 
   <meta
     name="description"
-    content="AAA Technologies is a Canadian technology training and consulting company providing instructor-led Microsoft cloud, cybersecurity, AI and modern IT training online and on-site."
+    content="AAA Technologies Ltd. is a Canadian technology training and consulting company providing instructor-led Microsoft cloud, cybersecurity, AI and modern IT training."
   />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.aaa-tech.ca/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aaa-tech.ca/" />
+  <meta
+    property="og:title"
+    content="AAA Technologies | Cloud, Cybersecurity & AI Training in Canada"
+  />
+  <meta
+    property="og:description"
+    content="Canadian technology training and consulting focused on Microsoft Azure, cybersecurity, artificial intelligence, Microsoft 365 and modern IT."
+  />
+  <meta property="og:site_name" content="AAA Technologies" />
+
+  <!-- Twitter / Social -->
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:title"
+    content="AAA Technologies | Cloud, Cybersecurity & AI Training in Canada"
+  />
+  <meta
+    name="twitter:description"
+    content="Instructor-led Canadian technology training in Microsoft cloud, cybersecurity, AI and modern IT."
+  />
+
+  <!-- Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AAA Technologies Ltd.",
+    "url": "https://www.aaa-tech.ca/",
+    "email": "ali@aaa-tech.ca",
+    "description": "Canadian technology training and consulting company providing instructor-led training in Microsoft cloud technologies, cybersecurity, artificial intelligence, Microsoft 365 and modern IT.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Canada"
+    },
+    "knowsAbout": [
+      "Microsoft Azure",
+      "Cloud Computing",
+      "Cybersecurity",
+      "Artificial Intelligence",
+      "Microsoft 365",
+      "Microsoft Security",
+      "Technology Training"
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -24,7 +78,6 @@
       --muted: #64748b;
       --border: #e2e8f0;
       --green: #0f9f6e;
-      --gold: #d89b18;
     }
 
     * {
@@ -60,7 +113,7 @@
       top: 0;
       z-index: 1000;
       background: rgba(7, 26, 51, 0.97);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(12px);
     }
 
@@ -114,8 +167,16 @@
       display: flex;
       align-items: center;
       background:
-        radial-gradient(circle at 82% 30%, rgba(50,149,220,0.35), transparent 25%),
-        radial-gradient(circle at 90% 70%, rgba(41,102,160,0.25), transparent 30%),
+        radial-gradient(
+          circle at 82% 30%,
+          rgba(50, 149, 220, 0.35),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 90% 70%,
+          rgba(41, 102, 160, 0.25),
+          transparent 30%
+        ),
         linear-gradient(135deg, #061629 0%, #0a2847 60%, #0d3558 100%);
       overflow: hidden;
       position: relative;
@@ -201,11 +262,11 @@
     .btn-secondary {
       border: 1px solid #789bb6;
       color: white;
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
     }
 
     .btn-secondary:hover {
-      background: rgba(255,255,255,0.09);
+      background: rgba(255, 255, 255, 0.09);
     }
 
     /* TRUST BAR */
@@ -248,7 +309,7 @@
       font-size: 12px;
     }
 
-    /* COMMON SECTION */
+    /* COMMON */
 
     section {
       padding: 85px 0;
@@ -297,7 +358,7 @@
       border: 1px solid var(--border);
       padding: 28px;
       border-radius: 12px;
-      box-shadow: 0 8px 28px rgba(20,40,70,0.05);
+      box-shadow: 0 8px 28px rgba(20, 40, 70, 0.05);
     }
 
     .audience-card .icon {
@@ -373,8 +434,8 @@
     }
 
     .delivery-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 12px;
       padding: 34px;
     }
@@ -501,7 +562,7 @@
 
     .canada {
       background:
-        linear-gradient(rgba(6,22,41,0.94), rgba(6,22,41,0.94)),
+        linear-gradient(rgba(6, 22, 41, 0.94), rgba(6, 22, 41, 0.94)),
         linear-gradient(135deg, #102d4b, #061629);
       color: white;
       text-align: center;
@@ -556,7 +617,7 @@
       grid-template-columns: 2fr 1fr 1fr;
       gap: 35px;
       padding-bottom: 30px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .footer-brand {
@@ -591,7 +652,6 @@
     /* RESPONSIVE */
 
     @media (max-width: 950px) {
-
       nav {
         display: none;
       }
@@ -614,11 +674,9 @@
       .credibility-grid {
         grid-template-columns: 1fr;
       }
-
     }
 
     @media (max-width: 650px) {
-
       section {
         padding: 65px 0;
       }
@@ -648,793 +706,682 @@
       .cta-box {
         padding: 42px 20px;
       }
-
     }
-
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container navbar">
+  <header>
+    <div class="container navbar">
 
-    <div class="brand">
-      AAA <span>TECHNOLOGIES</span>
+      <div class="brand">
+        AAA <span>TECHNOLOGIES</span>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#training">Training</a>
+        <a href="#audiences">Who We Train</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </nav>
+
     </div>
+  </header>
 
-    <nav>
-      <a href="#training">Training</a>
-      <a href="#audiences">Who We Train</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="nav-cta">Contact Us</a>
-    </nav>
+  <main>
 
-  </div>
-</header>
+    <!-- HERO -->
 
+    <section class="hero">
 
-<main>
+      <div class="container">
 
-  <!-- HERO -->
+        <div class="hero-content">
 
-  <section class="hero">
+          <div class="eyebrow">
+            CANADIAN TECHNOLOGY TRAINING • CLOUD • CYBERSECURITY • AI
+          </div>
 
-    <div class="container">
+          <h1>
+            Build Skills.
+            <span>Build Careers.</span>
+            Build What's Next.
+          </h1>
 
-      <div class="hero-content">
+          <p>
+            AAA Technologies provides practical, instructor-led technology training
+            for professionals, students, organizations, nonprofits and government.
+            Build real-world skills in Microsoft cloud technologies, cybersecurity,
+            artificial intelligence and modern IT through experienced instructors
+            and hands-on learning.
+          </p>
 
-        <div class="eyebrow">
-          CANADIAN TECHNOLOGY TRAINING • CLOUD • CYBERSECURITY • AI
+          <div class="hero-actions">
+
+            <a href="#training" class="btn btn-primary">
+              Explore Training
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Request Training
+            </a>
+
+          </div>
+
         </div>
 
-        <h1>
-          Build Skills.
-          <span>Build Careers.</span>
-          Build What's Next.
-        </h1>
+      </div>
+
+    </section>
+
+    <!-- TRUST BAR -->
+
+    <div class="trust-bar">
+
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <div class="trust-icon">🇨🇦</div>
+          <strong>Canadian Company</strong>
+          <small>Based in Canada</small>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">☁️</div>
+          <strong>Microsoft Partner Program Member</strong>
+          <small>Microsoft AI Cloud Partner Program</small>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">🎓</div>
+          <strong>MCT-Led Training</strong>
+          <small>Microsoft Certified Trainer instruction</small>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">🧪</div>
+          <strong>Hands-On Learning</strong>
+          <small>Practical labs & scenarios</small>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">🌎</div>
+          <strong>Flexible Delivery</strong>
+          <small>Virtual training across Canada</small>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- AUDIENCES -->
+
+    <section class="audiences" id="audiences">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Who We Serve
+          </div>
+
+          <h2>
+            Technology Training for Every Stage of Growth
+          </h2>
+
+          <p>
+            Whether you're building a career, upskilling a team or developing
+            workforce capabilities, AAA Technologies provides training designed
+            around practical outcomes.
+          </p>
+
+        </div>
+
+        <div class="audience-grid">
+
+          <div class="audience-card">
+            <div class="icon">👨‍🎓</div>
+            <h3>Students & Professionals</h3>
+            <p>
+              Develop practical skills, prepare for Microsoft certifications and
+              strengthen your career in cloud, cybersecurity, AI and modern IT.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <div class="icon">🏢</div>
+            <h3>Businesses & Organizations</h3>
+            <p>
+              Upskill teams through customized instructor-led training designed
+              around organizational technologies, roles and business objectives.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <div class="icon">🏛️</div>
+            <h3>Government & Public Sector</h3>
+            <p>
+              Workforce development, cloud skills, cybersecurity education and
+              modern technology training for public-sector teams and programs.
+            </p>
+          </div>
+
+          <div class="audience-card">
+            <div class="icon">🤝</div>
+            <h3>Nonprofit & Community Organizations</h3>
+            <p>
+              Collaborative technology-training opportunities designed to expand
+              access to digital skills and support workforce and community development.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TRAINING -->
+
+    <section id="training">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Professional Training
+          </div>
+
+          <h2>
+            Practical Technology Skills for the Real World
+          </h2>
+
+          <p>
+            Our programs combine instructor-led learning, hands-on practice and
+            real-world scenarios to help learners build confidence and capability.
+          </p>
+
+        </div>
+
+        <div class="training-grid">
+
+          <div class="training-card">
+            <div class="icon">☁️</div>
+            <h3>Microsoft Azure & Cloud</h3>
+            <p>
+              Azure administration, cloud architecture, infrastructure,
+              identity, governance, security and cloud modernization.
+            </p>
+          </div>
+
+          <div class="training-card">
+            <div class="icon">🛡️</div>
+            <h3>Cybersecurity & SOC</h3>
+            <p>
+              Security operations, Microsoft Sentinel, Defender,
+              threat detection, incident response and practical SOC scenarios.
+            </p>
+          </div>
+
+          <div class="training-card">
+            <div class="icon">🧠</div>
+            <h3>Artificial Intelligence</h3>
+            <p>
+              AI fundamentals, generative AI, responsible AI,
+              automation, AI productivity and practical business applications.
+            </p>
+          </div>
+
+          <div class="training-card">
+            <div class="icon">🔐</div>
+            <h3>Microsoft Security</h3>
+            <p>
+              Identity protection, Azure security, Defender,
+              Sentinel and Microsoft security technologies.
+            </p>
+          </div>
+
+          <div class="training-card">
+            <div class="icon">💼</div>
+            <h3>Microsoft 365 & Modern Work</h3>
+            <p>
+              Microsoft 365, collaboration, productivity,
+              identity, administration and modern workplace technologies.
+            </p>
+          </div>
+
+          <div class="training-card">
+            <div class="icon">🚀</div>
+            <h3>Career & Certification Preparation</h3>
+            <p>
+              Structured training designed to build real-world knowledge
+              while helping learners prepare for relevant industry certifications.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DELIVERY -->
+
+    <section class="delivery">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Flexible Delivery
+          </div>
+
+          <h2>
+            Instructor-Led Training Built Around Your Needs
+          </h2>
+
+          <p>
+            Training delivery can be adapted to individual learners,
+            teams and organizational requirements.
+          </p>
+
+        </div>
+
+        <div class="delivery-options">
+
+          <div class="delivery-card">
+
+            <div class="icon">💻</div>
+
+            <h3>Live Online Training</h3>
+
+            <p>
+              Instructor-led virtual classrooms provide interactive training,
+              demonstrations, discussions and hands-on exercises from anywhere
+              in Canada.
+            </p>
+
+          </div>
+
+          <div class="delivery-card">
+
+            <div class="icon">🏫</div>
+
+            <h3>Organization-Focused Delivery</h3>
+
+            <p>
+              Customized training can be planned around team requirements,
+              technology environments, learning goals and organizational schedules.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CREDIBILITY -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <div class="credibility-grid">
+
+          <div>
+
+            <div class="section-label">
+              Why AAA Technologies
+            </div>
+
+            <h2 style="font-size:40px; line-height:1.15; margin-bottom:18px;">
+              Experience Beyond the Classroom
+            </h2>
+
+            <p style="color:#64748b; font-size:17px;">
+              Effective technical training requires more than slides and theory.
+              AAA Technologies focuses on practical learning delivered by experienced
+              technology professionals who understand how modern systems operate
+              in real organizations.
+            </p>
+
+            <ul class="check-list">
+
+              <li>Microsoft-focused cloud, security and AI expertise</li>
+
+              <li>Training delivered by experienced technology professionals</li>
+
+              <li>Microsoft Certified Trainer (MCT) instruction</li>
+
+              <li>Hands-on labs and real-world technical scenarios</li>
+
+              <li>Canadian-based training delivery</li>
+
+              <li>Training for individuals, teams and organizations</li>
+
+            </ul>
+
+          </div>
+
+          <div class="credibility-box">
+
+            <h3>
+              Microsoft AI Cloud Partner Program
+            </h3>
+
+            <p>
+              AAA Technologies Ltd. is a member of the Microsoft AI Cloud Partner
+              Program and focuses on building practical expertise around Microsoft
+              cloud, cybersecurity, artificial intelligence and modern technology
+              solutions.
+            </p>
+
+            <br />
+
+            <p>
+              Microsoft-focused training is delivered by qualified instructors,
+              including Microsoft Certified Trainers (MCTs), bringing technical
+              knowledge and real-world experience into the learning environment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ACCESS -->
+
+    <section class="access">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Expanding Access to Technology Skills
+          </div>
+
+          <h2>
+            Training Should Create Opportunity
+          </h2>
+
+          <p>
+            AAA Technologies is committed to exploring practical ways to make
+            professional technology training more accessible.
+          </p>
+
+        </div>
+
+        <div class="access-grid">
+
+          <div class="access-card">
+
+            <span class="badge">
+              STUDENTS
+            </span>
+
+            <h3>
+              Student Training Discounts
+            </h3>
+
+            <p>
+              Special training rates may be available for students and individuals
+              preparing to enter or advance within the technology workforce.
+            </p>
+
+          </div>
+
+          <div class="access-card">
+
+            <span class="badge">
+              NONPROFITS
+            </span>
+
+            <h3>
+              Nonprofit Partnerships
+            </h3>
+
+            <p>
+              We work with eligible nonprofit and community organizations to explore
+              discounted, sponsored or no-cost training opportunities subject to
+              partnership and program availability.
+            </p>
+
+          </div>
+
+          <div class="access-card">
+
+            <span class="badge">
+              WORKFORCE DEVELOPMENT
+            </span>
+
+            <h3>
+              Employer & Community Programs
+            </h3>
+
+            <p>
+              AAA Technologies welcomes opportunities to collaborate with employers,
+              community organizations and public programs supporting technology
+              workforce development and professional upskilling.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Beyond Training
+          </div>
+
+          <h2>
+            Technology Services & Consulting
+          </h2>
+
+          <p>
+            Training is a core part of AAA Technologies, but our capabilities extend
+            into practical technology consulting and implementation support.
+          </p>
+
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <h3>☁️ Cloud Consulting</h3>
+            <p>
+              Cloud planning, Azure architecture, modernization,
+              migration guidance and cloud optimization.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>🛡️ Cybersecurity Consulting</h3>
+            <p>
+              Security assessments, cloud security,
+              identity protection and security architecture guidance.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>🧠 AI Advisory</h3>
+            <p>
+              Helping organizations understand, evaluate and responsibly
+              adopt practical artificial intelligence and automation solutions.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>⚙️ IT Modernization</h3>
+            <p>
+              Technology modernization and infrastructure planning
+              designed around security, reliability and maintainability.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>📋 Technical Assessments</h3>
+            <p>
+              Technology assessments designed to identify risks,
+              modernization opportunities and practical improvement paths.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3>🤝 Advisory Services</h3>
+            <p>
+              Strategic technical guidance for businesses,
+              nonprofits, public-sector organizations and technology teams.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CANADA -->
+
+    <section class="canada">
+
+      <div class="container">
+
+        <div class="section-label" style="color:#6bd0ff;">
+          Proudly Canadian
+        </div>
+
+        <h2>
+          Built in Canada. Delivered from Canada.
+        </h2>
 
         <p>
-          AAA Technologies provides practical, instructor-led technology training
-          for professionals, students, organizations, nonprofits and government.
-          Build real-world skills in Microsoft cloud technologies, cybersecurity,
-          artificial intelligence and modern IT through experienced instructors
-          and hands-on learning.
+          AAA Technologies Ltd. is a Canadian technology and training company.
+          Our training operations are based in Canada, with instruction delivered
+          by Canada-based technology professionals. We are committed to supporting
+          Canadian learners, organizations, nonprofits and public-sector partners
+          while also serving customers through flexible online delivery.
         </p>
 
-        <div class="hero-actions">
+      </div>
 
-          <a href="#training" class="btn btn-primary">
-            Explore Training
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="cta" id="contact">
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <h2>
+            Let's Build Skills That Matter
+          </h2>
+
+          <p>
+            Looking for professional technology training, team upskilling,
+            nonprofit collaboration, workforce development or technology consulting?
+            Start a conversation with AAA Technologies.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="mailto:ali@aaa-tech.ca"
+          >
+            Contact AAA Technologies
           </a>
 
-          <a href="#contact" class="btn btn-secondary">
-            Request Training
-          </a>
-
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+  </main>
 
-
-  <!-- TRUST BAR -->
-
-  <div class="trust-bar">
-
-    <div class="container trust-grid">
-
-      <div class="trust-item">
-        <div class="trust-icon">🇨🇦</div>
-        <strong>Canadian Company</strong>
-        <small>Based in Canada</small>
-      </div>
-
-      <div class="trust-item">
-        <div class="trust-icon">☁️</div>
-        <strong>Microsoft AI Cloud Partner</strong>
-        <small>Microsoft partner ecosystem</small>
-      </div>
-
-      <div class="trust-item">
-        <div class="trust-icon">🎓</div>
-        <strong>MCT-Led Training</strong>
-        <small>Experienced certified instructors</small>
-      </div>
-
-      <div class="trust-item">
-        <div class="trust-icon">🧪</div>
-        <strong>Hands-On Learning</strong>
-        <small>Practical labs & scenarios</small>
-      </div>
-
-      <div class="trust-item">
-        <div class="trust-icon">🌎</div>
-        <strong>Online & On-Site</strong>
-        <small>Flexible delivery options</small>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- AUDIENCES -->
-
-  <section class="audiences" id="audiences">
+  <footer>
 
     <div class="container">
 
-      <div class="section-heading">
-
-        <div class="section-label">
-          Who We Serve
-        </div>
-
-        <h2>
-          Technology Training for Every Stage of Growth
-        </h2>
-
-        <p>
-          Whether you're building a career, upskilling a team or developing
-          workforce capabilities, AAA Technologies provides training designed
-          around practical outcomes.
-        </p>
-
-      </div>
-
-
-      <div class="audience-grid">
-
-        <div class="audience-card">
-
-          <div class="icon">👨‍🎓</div>
-
-          <h3>Students & Professionals</h3>
-
-          <p>
-            Develop practical skills, prepare for Microsoft certifications and
-            strengthen your career in cloud, cybersecurity, AI and modern IT.
-          </p>
-
-        </div>
-
-
-        <div class="audience-card">
-
-          <div class="icon">🏢</div>
-
-          <h3>Businesses & Organizations</h3>
-
-          <p>
-            Upskill teams through customized instructor-led training designed
-            around organizational technologies, roles and business objectives.
-          </p>
-
-        </div>
-
-
-        <div class="audience-card">
-
-          <div class="icon">🏛️</div>
-
-          <h3>Government & Public Sector</h3>
-
-          <p>
-            Workforce development, cloud skills, cybersecurity education and
-            modern technology training for public-sector teams and programs.
-          </p>
-
-        </div>
-
-
-        <div class="audience-card">
-
-          <div class="icon">🤝</div>
-
-          <h3>Nonprofit & Community Organizations</h3>
-
-          <p>
-            Collaborative technology-training opportunities designed to expand
-            access to digital skills and support workforce and community development.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TRAINING -->
-
-  <section id="training">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <div class="section-label">
-          Professional Training
-        </div>
-
-        <h2>
-          Practical Technology Skills for the Real World
-        </h2>
-
-        <p>
-          Our programs combine instructor-led learning, hands-on practice and
-          real-world scenarios to help learners build confidence and capability.
-        </p>
-
-      </div>
-
-
-      <div class="training-grid">
-
-        <div class="training-card">
-
-          <div class="icon">☁️</div>
-
-          <h3>Microsoft Azure & Cloud</h3>
-
-          <p>
-            Azure administration, cloud architecture, infrastructure,
-            identity, governance, security and cloud modernization.
-          </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-          <div class="icon">🛡️</div>
-
-          <h3>Cybersecurity & SOC</h3>
-
-          <p>
-            Security operations, Microsoft Sentinel, Defender,
-            threat detection, incident response and practical SOC scenarios.
-          </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-          <div class="icon">🧠</div>
-
-          <h3>Artificial Intelligence</h3>
-
-          <p>
-            AI fundamentals, generative AI, responsible AI,
-            automation, AI productivity and practical business applications.
-          </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-          <div class="icon">🔐</div>
-
-          <h3>Microsoft Security</h3>
-
-          <p>
-            Identity protection, Azure security, Defender,
-            Sentinel and Microsoft security technologies.
-          </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-          <div class="icon">💼</div>
-
-          <h3>Microsoft 365 & Modern Work</h3>
-
-          <p>
-            Microsoft 365, collaboration, productivity,
-            identity, administration and modern workplace technologies.
-          </p>
-
-        </div>
-
-
-        <div class="training-card">
-
-          <div class="icon">🚀</div>
-
-          <h3>Career & Certification Preparation</h3>
-
-          <p>
-            Structured training designed to build real-world knowledge
-            while helping learners prepare for relevant industry certifications.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- DELIVERY -->
-
-  <section class="delivery">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <div class="section-label">
-          Flexible Delivery
-        </div>
-
-        <h2>
-          Learn Online or On-Site
-        </h2>
-
-        <p>
-          Training delivery can be adapted to individual learners,
-          teams and organizational requirements.
-        </p>
-
-      </div>
-
-
-      <div class="delivery-options">
-
-        <div class="delivery-card">
-
-          <div class="icon">💻</div>
-
-          <h3>Live Online Training</h3>
-
-          <p>
-            Instructor-led virtual classrooms provide interactive training,
-            demonstrations, discussions and hands-on exercises from anywhere.
-          </p>
-
-        </div>
-
-
-        <div class="delivery-card">
-
-          <div class="icon">🏫</div>
-
-          <h3>On-Site Training</h3>
-
-          <p>
-            Instructor-led training can be delivered at customer locations
-            for teams, organizations, government and community programs.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CREDIBILITY -->
-
-  <section id="about">
-
-    <div class="container">
-
-      <div class="credibility-grid">
+      <div class="footer-grid">
 
         <div>
 
-          <div class="section-label">
-            Why AAA Technologies
+          <div class="footer-brand">
+            AAA TECHNOLOGIES LTD.
           </div>
 
-          <h2 style="font-size:40px; line-height:1.15; margin-bottom:18px;">
-            Experience Beyond the Classroom
-          </h2>
-
-          <p style="color:#64748b; font-size:17px;">
-            Effective technical training requires more than slides and theory.
-            AAA Technologies focuses on practical learning delivered by experienced
-            technology professionals who understand how modern systems operate
-            in real organizations.
-          </p>
-
-
-          <ul class="check-list">
-
-            <li>Microsoft-focused cloud, security and AI expertise</li>
-
-            <li>Training delivered by experienced technology professionals</li>
-
-            <li>Microsoft Certified Trainer (MCT) instruction</li>
-
-            <li>Hands-on labs and real-world technical scenarios</li>
-
-            <li>Canadian-based training delivery</li>
-
-            <li>Training for individuals, teams and organizations</li>
-
-          </ul>
-
-        </div>
-
-
-        <div class="credibility-box">
-
-          <h3>
-            Microsoft AI Cloud Partner
-          </h3>
-
           <p>
-            AAA Technologies participates in the Microsoft AI Cloud Partner
-            Program and focuses on building practical expertise around
-            Microsoft cloud, cybersecurity, artificial intelligence and
-            modern technology solutions.
-          </p>
-
-          <br>
-
-          <p>
-            Microsoft-focused training is delivered by qualified instructors,
-            including Microsoft Certified Trainers (MCTs), bringing both
-            technical knowledge and real-world experience into the learning environment.
+            Canadian technology training, cloud, cybersecurity,
+            artificial intelligence and consulting services.
           </p>
 
         </div>
 
+        <div>
+
+          <h4>
+            Training
+          </h4>
+
+          <a href="#training">Cloud & Azure</a>
+          <a href="#training">Cybersecurity</a>
+          <a href="#training">Artificial Intelligence</a>
+          <a href="#training">Microsoft Technologies</a>
+
+        </div>
+
+        <div>
+
+          <h4>
+            Contact
+          </h4>
+
+          <a href="mailto:ali@aaa-tech.ca">
+            ali@aaa-tech.ca
+          </a>
+
+          <p>
+            Alberta, Canada
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> AAA Technologies Ltd. All rights reserved.
       </div>
 
     </div>
 
-  </section>
-
-
-  <!-- ACCESSIBILITY / COMMUNITY -->
-
-  <section class="access">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <div class="section-label">
-          Expanding Access to Technology Skills
-        </div>
-
-        <h2>
-          Training Should Create Opportunity
-        </h2>
-
-        <p>
-          AAA Technologies is committed to exploring practical ways to make
-          professional technology training more accessible.
-        </p>
-
-      </div>
-
-
-      <div class="access-grid">
-
-        <div class="access-card">
-
-          <span class="badge">
-            STUDENTS
-          </span>
-
-          <h3>
-            Student Training Discounts
-          </h3>
-
-          <p>
-            Special training rates may be available for students and individuals
-            preparing to enter or advance within the technology workforce.
-          </p>
-
-        </div>
-
-
-        <div class="access-card">
-
-          <span class="badge">
-            NONPROFITS
-          </span>
-
-          <h3>
-            Nonprofit Partnerships
-          </h3>
-
-          <p>
-            We work with eligible nonprofit and community organizations to explore
-            discounted, sponsored or no-cost training opportunities subject to
-            partnership and program availability.
-          </p>
-
-        </div>
-
-
-        <div class="access-card">
-
-          <span class="badge">
-            WORKFORCE DEVELOPMENT
-          </span>
-
-          <h3>
-            Employer & Community Programs
-          </h3>
-
-          <p>
-            AAA Technologies welcomes opportunities to collaborate with employers,
-            community organizations and public programs supporting technology
-            workforce development and professional upskilling.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SERVICES -->
-
-  <section id="services">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <div class="section-label">
-          Beyond Training
-        </div>
-
-        <h2>
-          Technology Services & Consulting
-        </h2>
-
-        <p>
-          Training is a core part of AAA Technologies, but our capabilities extend
-          into practical technology consulting and implementation support.
-        </p>
-
-      </div>
-
-
-      <div class="services-grid">
-
-        <div class="service-card">
-
-          <h3>
-            ☁️ Cloud Consulting
-          </h3>
-
-          <p>
-            Cloud planning, Azure architecture, modernization,
-            migration guidance and cloud optimization.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <h3>
-            🛡️ Cybersecurity Consulting
-          </h3>
-
-          <p>
-            Security assessments, cloud security,
-            identity protection and security architecture guidance.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <h3>
-            🧠 AI Advisory
-          </h3>
-
-          <p>
-            Helping organizations understand, evaluate and responsibly
-            adopt practical artificial intelligence and automation solutions.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <h3>
-            ⚙️ IT Modernization
-          </h3>
-
-          <p>
-            Technology modernization and infrastructure planning
-            designed around security, reliability and maintainability.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <h3>
-            📋 Technical Assessments
-          </h3>
-
-          <p>
-            Technology assessments designed to identify risks,
-            modernization opportunities and practical improvement paths.
-          </p>
-
-        </div>
-
-
-        <div class="service-card">
-
-          <h3>
-            🤝 Advisory Services
-          </h3>
-
-          <p>
-            Strategic technical guidance for businesses,
-            nonprofits, public-sector organizations and technology teams.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CANADA -->
-
-  <section class="canada">
-
-    <div class="container">
-
-      <div class="section-label" style="color:#6bd0ff;">
-        Proudly Canadian
-      </div>
-
-      <h2>
-        Built in Canada. Delivered from Canada.
-      </h2>
-
-      <p>
-        AAA Technologies Ltd. is a Canadian technology and training company.
-        Our training operations are based in Canada, with instruction delivered
-        by Canada-based technology professionals. We are committed to supporting
-        Canadian learners, organizations, nonprofits and public-sector partners
-        while also serving customers through flexible online delivery.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-
-  <section class="cta" id="contact">
-
-    <div class="container">
-
-      <div class="cta-box">
-
-        <h2>
-          Let's Build Skills That Matter
-        </h2>
-
-        <p>
-          Looking for professional technology training, team upskilling,
-          nonprofit collaboration, workforce development or technology consulting?
-          Start a conversation with AAA Technologies.
-        </p>
-
-        <a
-          class="btn btn-primary"
-          href="mailto:ali@aaa-tech.ca"
-        >
-          Contact AAA Technologies
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-</main>
-
-
-<footer>
-
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-
-        <div class="footer-brand">
-          AAA TECHNOLOGIES LTD.
-        </div>
-
-        <p>
-          Canadian technology training, cloud, cybersecurity,
-          artificial intelligence and consulting services.
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <h4>
-          Training
-        </h4>
-
-        <a href="#training">Cloud & Azure</a>
-        <a href="#training">Cybersecurity</a>
-        <a href="#training">Artificial Intelligence</a>
-        <a href="#training">Microsoft Technologies</a>
-
-      </div>
-
-
-      <div>
-
-        <h4>
-          Contact
-        </h4>
-
-        <a href="mailto:ali@aaa-tech.ca">
-          ali@aaa-tech.ca
-        </a>
-
-        <p>
-          Alberta, Canada
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-      © <span id="year"></span> AAA Technologies Ltd. All rights reserved.
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
